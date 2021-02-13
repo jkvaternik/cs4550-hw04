@@ -1,0 +1,44 @@
+Please fill in answers to the questions below:
+
+
+1. What's your name?
+Jaime Kvaternik
+
+2. What hostname did you deploy your app to?
+hw04.jk-web.site
+
+3. What's the URL of your git for this assignment?
+https://github.com/jkvaternik/cs4550-hw04
+
+4. How much of the functionality did you complete?
+I implemented all of the features.
+
+5. Did you successfully deploy? If not, what's broken?
+Yes, it took me a few hours but I got it going.
+
+6. How comfortable do you feel with Elixir now?
+Still need more practice. Definitely gonna have to wake up my fundies
+knowledge... I miss iteratives and mutation :(
+
+7. Which parts of this assignment did you have trouble with, if any?
+Elixir: I'm very used to iterables and performing mutations so I
+definitely struggled with the Elixir problems at first. After a while
+of hacking away, it was okay though. Not my favorite code language.
+Also for some reason, milligram wasn't working locally but when I
+deployed it appearred??
+
+Deploying: This sucked. So many different parts — missing packages
+everywhere, had to go back and reinstall certain things. Hopefully
+won't be as bad from here on out. I definitely understand it though.
+
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Task 4
+ - Task 5
+ - Task 6
+ - Task 7
+ - Task 8
