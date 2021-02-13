@@ -4,13 +4,6 @@ defmodule Practice.Calc do
     num
   end
 
-  # %{
-  #   "+" => 0,
-  #   "-" => 0,
-  #   "*" => 1,
-  #   "/" => 1
-  # }
-
   def tag_tokens(expr) do
     case expr do
       "*" -> {:op, expr}
@@ -23,11 +16,10 @@ defmodule Practice.Calc do
 
   def op_preference(op) do
     case op do
-      {_, "*"} -> 2
-      {_, "/"} -> 2
-      {_, "-"} -> 1
-      {_, "+"} -> 1
-      {_, _} -> 0
+      {_, "*"} -> 1
+      {_, "/"} -> 1
+      {_, "-"} -> 0
+      {_, "+"} -> 0
     end
   end
 
