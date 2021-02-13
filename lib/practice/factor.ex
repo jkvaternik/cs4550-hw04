@@ -1,7 +1,9 @@
 defmodule Practice.Factor do
   def find_factors(num) do
-    fact = 3..(num)
-    |> Enum.find(num, fn x -> rem(num, x) == 0 end)
+    fact =
+      3..num
+      |> Enum.find(num, fn x -> rem(num, x) == 0 end)
+
     fact
   end
 

@@ -79,19 +79,19 @@ defmodule Practice.Calc do
           case elem(hd(expr), 1) do
             "*" ->
               val = tempOperand1 * tempOperand2
-              eval(tl(expr), [ val | (tl (tl result_stack))])
+              eval(tl(expr), [val | tl(tl(result_stack))])
 
             "/" ->
               val = div(tempOperand2, tempOperand1)
-              eval(tl(expr), [val | (tl (tl result_stack))])
+              eval(tl(expr), [val | tl(tl(result_stack))])
 
             "-" ->
               val = tempOperand2 - tempOperand1
-              eval(tl(expr), [val | (tl (tl result_stack))])
+              eval(tl(expr), [val | tl(tl(result_stack))])
 
             "+" ->
               val = tempOperand1 + tempOperand2
-              eval(tl(expr), [ val | (tl (tl result_stack))])
+              eval(tl(expr), [val | tl(tl(result_stack))])
           end
       end
     end
@@ -105,6 +105,7 @@ defmodule Practice.Calc do
     |> Enum.map(fn x -> tag_tokens(x) end)
     |> convert_to_postfix([], [])
     |> eval([])
+
     # |> parse_float
 
     # Hint:
